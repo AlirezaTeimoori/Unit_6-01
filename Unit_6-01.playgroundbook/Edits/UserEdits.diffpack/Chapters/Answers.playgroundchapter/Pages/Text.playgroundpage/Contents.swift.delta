@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Created by: Alireza Teimoori
+// Created on: Dec 2017
+// Unit 6-01
+// ICS3U
+// Learning Enum in Swift
+while true {
+    show("Hello!")
+    enum favoritDay: Int {
+        case Sunday
+        case Monday
+        case Tuesday
+        case Wednesday
+        case Thursday
+        case Friday
+        case Saturday
+        
+        var string: String {
+            return String(describing: self)
+        }
+    }
+    let userInput : String = ask("Enter the number of the day you like: ")
+    var daySelected = Int(userInput)
+    
+    if let value = favoritDay(rawValue: daySelected!-1) {
+        show(value.string) //-&gt;foo
+    }
+
+}
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 630}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 71}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
